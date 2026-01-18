@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">KotlinPractice2026</string>
+    <string name="my_name">Name:</string>
+    <string name="my_Ak">Abhishek kumar</string>
+    <string name="my_Roll">RollNo:</string>
+    <string name="my_Rollno">22-B-CSE-004</string>
+    <string name="my_class">Class:</string>
+    <string name="my_classname">B.TECH.(CSE)</string>
+    <string name="my_botton">Login</string>
+    <string name="my_botton1">Create Account</string>
+    <string name="my_uname">Username</string>
+    <string name="my_password">Password</string>
+    <string name="my_password1">Confirm Password</string>
+    <string name="my_page">Welcome</string>
+    <string name="my_page1">Login to your Account</string>
+    <string name="my_login">- Or Login With -</string>
+    <string name="my_create">Dont have an account?</string>
+    <string name="my_page2">Create your Account</string>
+
+
+</resources>
