@@ -12,10 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinPractice2026">
         <activity
-            android:name=".MainActivity3"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
+            android:name=".FragmentActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,10 +21,37 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".constraintlayout_Activity4"
             android:exported="false">
 
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
+        <activity
+            android:name=".Relative_Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".Relative_Activity1"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAccount"
+            android:exported="false" />
+        <activity
+            android:name=".MainScreen"
+            android:exported="false">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".LoginScreen"
+            android:exported="false" />
     </application>
 
 </manifest>

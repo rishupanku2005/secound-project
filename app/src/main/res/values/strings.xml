@@ -16,6 +16,16 @@
     <string name="my_login">- Or Login With -</string>
     <string name="my_create">Dont have an account?</string>
     <string name="my_page2">Create your Account</string>
-
+    <string name="my_page3">App Developer</string>
+    <string name="my_follow">Followers</string>
+    <string name="my_follow1">Following</string>
+    <string name="my_project">Project</string>
+    <string name="my_num1">75K</string>
+    <string name="my_num2">10K</string>
+    <string name="my_num3">600</string>
+    <string name="Create_account">Create Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="submit">submit</string>
 
 </resources>

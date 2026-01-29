@@ -8,14 +8,14 @@
     android:background="@color/white"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".LoginScreen">
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@drawable/login"
-        android:layout_marginBottom="150dp">
-    </ImageView>
+        android:layout_marginBottom="150dp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,9 +34,11 @@
         app:cardCornerRadius="5dp"
         app:cardElevation="2dp">
         <EditText
+            android:id="@+id/etUser"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
+            android:autofillHints="name"
             android:maxLength="20"
             android:padding="10sp"
             android:background="@null"
@@ -52,12 +54,14 @@
         app:cardElevation="2dp"
         android:layout_height="wrap_content">
         <EditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10sp"
             android:layout_margin="5dp"
+            android:autofillHints="password"
             android:background="@null"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:maxLength="20"
             android:hint="@string/my_password"/>
     </androidx.cardview.widget.CardView>
@@ -69,17 +73,20 @@
         app:cardElevation="2dp"
         android:layout_height="wrap_content">
         <EditText
+            android:id="@+id/cmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10sp"
             android:layout_margin="5dp"
+            android:autofillHints="password"
             android:background="@null"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:maxLength="20"
             android:hint="@string/my_password1"/>
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/createButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -161,7 +168,5 @@
 
 
     </LinearLayout>
-
-
 
 </LinearLayout>

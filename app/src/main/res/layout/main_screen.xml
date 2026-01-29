@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/blue1"
-    tools:context=".MainActivity2">
+    tools:context=".MainScreen">
 
     <TextView
         android:layout_width="wrap_content"
