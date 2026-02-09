@@ -1,31 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".FragmentActivity"
-    android:orientation="vertical">
+    android:layout_height="match_parent"
+    tools:context=".FragmentActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:id="@+id/fragment"
-        android:name="com.abhishek.kotlinpractice2026.HomeFragment"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:hint="@string/my_name"/>
+        android:id="@+id/frag"
+        android:name="com.abhishek.kotlinpractice2026.FirstFragment"/>
 
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/submit">
-    </Button>
+        android:text="@string/add"
+        android:backgroundTint="@color/ff9"
+        android:layout_marginStart="60dp"
+        />
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sub"
+        android:backgroundTint="@color/ff9"
+        android:layout_marginTop="-49dp"
+        android:layout_marginStart="180dp"
+        />
 
 
-</LinearLayout>
+  </LinearLayout>

@@ -1,39 +1,20 @@
 package com.abhishek.kotlinpractice2026
 
-import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.abhishek.kotlinpractice2026.databinding.ActivityFragmentBinding
 
-class FragmentActivity : AppCompatActivity() {
-    lateinit var binding: ActivityFragmentBinding
-    lateinit var interfaces : Interface
-
-    var i = 0
+class ListViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding= ActivityFragmentBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_list_view)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.add.setOnClickListener {
-            interfaces.add(++i)
-        }
-        binding.sub.setOnClickListener {
-            if (i>0){
-            interfaces.sub(--i)
-        }
-        }
-    }
-
-    fun setColor(){
-        binding.main.setBackgroundColor(Color.BLUE)
     }
 }
